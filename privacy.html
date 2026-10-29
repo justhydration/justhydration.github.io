@@ -51,12 +51,11 @@
 
   <h2>Location and weather (optional)</h2>
   <p>If you turn on "Adjust goal for hot weather" (a Just Hydration Plus feature), the app asks for your approximate
-  location. It rounds your coordinates to about 1 km and sends them to
-  <a href="https://open-meteo.com" rel="noopener">Open-Meteo</a>, a free weather service, to get today's highest
-  temperature. No name, account or device identifier is sent. As with any internet request, Open-Meteo's servers can
-  see your IP address; please see <a href="https://open-meteo.com/en/terms" rel="noopener">Open-Meteo's terms and
-  privacy information</a>. Your location is not stored by the app or sent to us. You can turn this off at any time in
-  the app's Settings or in iPhone Settings → Privacy &amp; Security → Location Services.</p>
+  location. It rounds your coordinates to about 1 km and uses Apple Weather (Apple's WeatherKit service) to get today's
+  highest temperature. The request goes to Apple, not to us, and is covered by
+  <a href="https://www.apple.com/legal/privacy/" rel="noopener">Apple's Privacy Policy</a>
+  (<a href="https://weatherkit.apple.com/legal-attribution.html" rel="noopener">weather data sources</a>). Your location is not stored by the app or sent to us. You can turn this off at any time in the app's
+  Settings or in iPhone Settings → Privacy &amp; Security → Location Services.</p>
 
   <h2>Notifications</h2>
   <p>Reminders and fasting alerts are scheduled on your device. We don't use push notification servers and don't
