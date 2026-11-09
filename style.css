@@ -66,3 +66,9 @@ a { color: var(--accent); }
 
 nav { margin-top: 40px; font-size: 15px; }
 nav a { margin-right: 16px; }
+
+.store-badge { margin: 20px 0 28px; }
+.store-badge a { display: inline-block; border-radius: 10px; }
+.store-badge img { display: block; height: 54px; width: auto; }
+
+.legal { font-size: 13px; line-height: 1.5; margin: 16px 0 0; }
