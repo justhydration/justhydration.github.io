@@ -1,0 +1,97 @@
+/* Habit Duo's "Frosted" look: milky glass over soft sage, blossom and lavender light. */
+:root {
+  --canvas: #eef0ef;
+  --glass: rgba(255, 255, 255, 0.8);
+  --rim: rgba(255, 255, 255, 0.95);
+  --ink: #151b18;
+  --ink2: #4b5651;
+  --link: #23663f;
+  --sage: rgba(143, 220, 176, 0.75);
+  --blossom: rgba(248, 169, 203, 0.5);
+  --lavender: rgba(195, 184, 244, 0.55);
+  --shadow: rgba(20, 38, 28, 0.08);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --canvas: #0d110f;
+    --glass: rgba(17, 22, 19, 0.6);
+    --rim: rgba(255, 255, 255, 0.16);
+    --ink: #f2f5f3;
+    --ink2: #b9c3be;
+    --link: #7bd6a6;
+    --sage: rgba(47, 107, 76, 0.75);
+    --blossom: rgba(122, 46, 82, 0.65);
+    --lavender: rgba(62, 55, 112, 0.75);
+    --shadow: rgba(0, 0, 0, 0.3);
+  }
+}
+
+* { box-sizing: border-box; }
+
+html { background: var(--canvas); }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  color: var(--ink);
+  font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background:
+    radial-gradient(40rem 32rem at 95% -10%, var(--sage), transparent 70%),
+    radial-gradient(34rem 30rem at -10% 45%, var(--blossom), transparent 70%),
+    radial-gradient(40rem 34rem at 90% 100%, var(--lavender), transparent 70%),
+    var(--canvas);
+  background-attachment: fixed;
+}
+
+main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 40px 16px 64px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+header img {
+  width: 72px;
+  height: 72px;
+  border-radius: 17px;
+  box-shadow: 0 8px 24px var(--shadow);
+}
+
+header a { color: inherit; text-decoration: none; }
+
+h1 { font-size: 36px; font-weight: 300; line-height: 1.15; margin: 0; letter-spacing: -0.02em; }
+h2 { font-size: 22px; font-weight: 400; margin: 34px 0 8px; }
+h3 { font-size: 18px; font-weight: 500; margin: 22px 0 4px; }
+p, li { color: var(--ink); }
+.muted { color: var(--ink2); font-size: 15px; }
+
+.card {
+  background: var(--glass);
+  border: 1px solid var(--rim);
+  border-radius: 28px;
+  padding: 20px 24px;
+  margin: 18px 0;
+  box-shadow: 0 10px 32px var(--shadow);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+}
+
+a { color: var(--link); }
+
+nav { margin-top: 44px; font-size: 15px; }
+nav a {
+  display: inline-block;
+  margin: 0 8px 8px 0;
+  padding: 8px 16px;
+  border-radius: 999px;
+  background: var(--glass);
+  border: 1px solid var(--rim);
+  text-decoration: none;
+}
